@@ -382,24 +382,27 @@ body::-webkit-scrollbar {
 
 .contant{
     z-index: 2;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: start;
     text-align: start;
+    overflow: hidden;
+    padding-bottom: 20px;
+    /* background-color: #25d366; */
 }
 .contant h1 span{
     font-family: var(--primary-font);
     color: #fff;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 90px;
+    line-height: 80px;
     font-weight: 700;
 }
 .contant h1{
     font-family: var(--primary-font);
     color: #fff;
     font-size: 40px;
-    line-height: 30px;
+    line-height: 20px;
     letter-spacing: 2px;
     transform: translateX(100px);
     letter-spacing: 15px;
@@ -448,13 +451,12 @@ body::-webkit-scrollbar {
 .get-btn a{
     cursor: pointer;
     display: inline;
-    background-color: var(--prime-color);
+    border: #c9c9c9 solid 1px;
     color: #fff;
     padding: 10px 25px;
     transition: all .5s;
 }
 .get-btn a:hover{
-    background-color: var(--second-color);
     color: #fff;
     letter-spacing: 5px;
 }
@@ -482,12 +484,12 @@ body::-webkit-scrollbar {
     color: #fff;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
     opacity: .7;
     transition: all .5s;
     font-family: var(--primary-font);
-    font-size: 25px;
-}
+    font-size: 22px;
+} 
 .slide-btn:hover{
     opacity: 1;
     background-color: #fff;
@@ -511,6 +513,25 @@ body::-webkit-scrollbar {
 .scial-icon a{
     color: var(--wit-color);
     font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.scial-icon a h4{
+    color: var(--wit-color);
+    font-size: 12px;
+    position: absolute;
+    top: -20px;
+    font-weight: 300;
+    background-color: #000000;
+    padding: 5px 8px;
+    opacity: 0;
+    transition: all .5s;
+    border-radius: 20px;
+}
+.scial-icon a:hover h4{
+    opacity: 1;
+    top: -30px;
 }
 
 
