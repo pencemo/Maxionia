@@ -935,18 +935,19 @@ footer{
 .icon-round{
     width: 35px;
     height: 35px;
-    background-color: var(--prime-color);
+    border: solid 1px #fff;
     display: grid;
     place-content: center;
     border-radius: 50%;
     transition: all .2s;
 }
-.icon-round:hover{
-    background-color: var(--second-color);
+.icon-round:hover i{
+    color: #bdbdbd;
 }
 .icon-round i{
     font-size: 18px;
     color: #fff;
+    transition: .2s;
 }
 
 .footer-head{
@@ -961,7 +962,7 @@ footer{
     position: absolute;
     width: 50px;
     height: 1px;
-    background-color: var(--flame);
+    background-color: var(--wit-color);
     bottom: -5px;
 }
 .footer-links{
@@ -994,6 +995,7 @@ footer{
     height: 1px;
     background-color: #fff;
     margin-top: 100px;
+    opacity: .6;
 }
 .Copyright-raw{
     display: flex;
@@ -1003,10 +1005,12 @@ footer{
 .Copyright-raw p{
     font-size: 14px;
     color: #e9e9e9;
-    font-weight: 300;
+    font-weight: 200;
 }
 .Copyright-raw p a{
-    color: #fff;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: solid 1px #fff;
 }
 
 
