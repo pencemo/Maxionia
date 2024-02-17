@@ -604,9 +604,14 @@ body::-webkit-scrollbar {
 
 
 @media (max-width: 768px){
+    .contant h1 span{
+        color: #fff;
+        font-size: 50px;
+        font-weight: 700;
+    }
     .contant h1{
-        font-size: 45px;
-        line-height: 50px;
+        font-size: 35px;
+        line-height: 30px;
         animation: slide-text linear .5s backwards;
     }
     .contant p{
@@ -685,18 +690,11 @@ body::-webkit-scrollbar {
     z-index: 9;
 }
 
-.con-wrap{
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
+.more-btn a{
+    color: #000000;
 }
-.con-wrap h1{
-    color: var(--balck-color);
-}
-.con-wrap p{
-    font-size: 16px;
-    font-weight: 300;
-    color: #999999;
+.more-btn a:hover{
+    color: #000000;
 }
 
 
@@ -908,7 +906,8 @@ body::-webkit-scrollbar {
 /* footer */
 footer{
     width: 100%;
-    padding: 50px 0;
+    padding: 130px 0;
+    padding-bottom: 70px;
     background-color: #1b1b1b;
     /* box-shadow: 5px 15px 30px var(--balck-color); */
 }
@@ -936,14 +935,14 @@ footer{
 .icon-round{
     width: 35px;
     height: 35px;
-    background-color: var(--second-color);
+    background-color: var(--prime-color);
     display: grid;
     place-content: center;
     border-radius: 50%;
     transition: all .2s;
 }
 .icon-round:hover{
-    background-color: var(--prime-color);
+    background-color: var(--second-color);
 }
 .icon-round i{
     font-size: 18px;
@@ -955,7 +954,7 @@ footer{
     font-weight: 400;
     color: #fff;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .footer-head::before{
     content: "";
@@ -980,7 +979,7 @@ footer{
 }
 .footer-contact-dts a:hover,
 .footer-links a:hover{
-    color: var(--second-color);
+    color: var(--prime-color);
 }
 .footer-contact-dts i{
     margin-right: 10px;
@@ -988,36 +987,7 @@ footer{
 .footer-ads{
     margin-bottom: 5px;
 }
-.footer-input{
-    margin-top: 18px;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.footer-input input{
-    background-color: #ececec;
-    outline: none;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 5px;
-    border: solid 1px #ececec;
-}
-.footer-input input:focus{
-    border: solid 1px #6b6b6b;
-}
-.footer-input input::placeholder{
-    color: #c4c4c4;
-}
-.footer-input i{
-    position: absolute;
-    left: 210px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all .2s linear;
-}
-.footer-input i:hover{
-    color: var(--prime-color);
-}
+
 
 .bottom-line{
     width: 100%;
