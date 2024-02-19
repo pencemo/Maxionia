@@ -643,7 +643,7 @@ body::-webkit-scrollbar {
     display: grid;
     align-items: center;
     grid-template-columns: 50% 50%;
-    grid-template-areas: 'one tow';
+    grid-template-areas: ' tow one';
     gap: 20px;
 }
 .about-text{
@@ -674,20 +674,40 @@ body::-webkit-scrollbar {
     z-index: 7;
     display: flex;
     justify-content: end;
+    background-color: #25d366;
+    width: 100%;
+    height: 350px;
 }
-.img-bg-color{
-    position: absolute;
-    width: 30%;
-    height: 100%;
-    background-color: #fad4b0;
-    opacity: .5;
-    z-index: 8;
-    top: 0;
-    left: 100px;
-}
+
 .image-div img{
     width: 90%;
     z-index: 9;
+}
+.values{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.divider{
+    width: 1px;
+    height: 50px;
+    background-color: #e0e0e0;
+}
+.values .valu-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.values .valu-icon i{
+    font-size: 30px;
+}
+.values .valu-icon p{
+    font-size: 14px;
+    color: #0f0f0f;
+    font-weight: 300;
+    line-height: 14px;
 }
 
 .more-btn a{
@@ -709,6 +729,9 @@ body::-webkit-scrollbar {
     .about-text h1{
         font-size: 40px;
         line-height: 45px;
+    }
+    .values{
+        width: 100%;
     }
 }
 
