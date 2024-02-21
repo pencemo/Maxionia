@@ -133,7 +133,7 @@
 
 
 <!-- ******************************** -->
-
+<!-- 
 <section>
     <div class="landing-bg">
         <div class="slide act">
@@ -178,7 +178,47 @@
     </div>
 
     <div class="bg-text"><h1>Maxionia</h1></div>
+</section> -->
+
+<!-- ******************************** -->
+
+
+<!-- /* new landing background */ -->
+
+
+
+
+<section class="bg" >
+    <div class="bg-vid">
+        <video id="bg" autoplay muted loop id="myVideo"><source src="./images/clouds_-_48897 (1080p).mp4" type="video/mp4"></video>
+          <div id="bg2" class="bg-img bg-img-1"><img src="./images/desertd bg 1.png" alt=""></div>
+          <div id="logo" class="logo-3"><img src="./images/logo-3.png" alt=""></div>
+          <div id="bg3" class="bg-img bg-img-2"><img src="./images/desertd bg 2.png" alt=""></div>
+          <div class="bg-pading"></div>
+    </div>
+    <div class="texts container ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad aliquam nesciunt neque iusto eius natus sapiente explicabo odit debitis incidunt, repudiandae, rem ut officia quibusdam corrupti deleLorem ipsum dolor, sit amet consectetur adipisicing elit. Error sequi nihil animi accusamus? Vero dignissimos modi numquam quaerat at voluptates. Vitae consequatur nulla minima, nihil aperiam excepturi facilis earum libero.</p>
+        <div class="side">
+            <div class="long-icons ">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a class="scroll" href="#about" ><div class="sroll-down"><p>Scroll</p><i class="fa-sharp fa-light fa-arrow-down"></i></div></a>
+        </div>
+    </div>
+    
+    
 </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -228,6 +268,9 @@
         <h1 >Our Subsidiaries</h1>
     </div>
     <div class="container">
+        <div class="icon-wrap">
+            <div class="icon-box"></div>
+        </div>
         <div class="raw sub-raw">
             <div class="sub-box" data-aos="fade-right">
                 <img src="./images/hygiene.png" alt="">
@@ -258,9 +301,6 @@
 
 
 
-        <div class="icon-wrap">
-            <div class="icon-box"></div>
-        </div>
 
     </div>
 </section>
@@ -437,9 +477,48 @@
     <!-- scroll animation cdn -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+
+
+
+     <!-- gsap scroll animation  -->
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+     <!-- ***************************** -->
+
     <script src="./script.js"></script>
 
+    <script>
+           gsap.to("#bg", {
+        scrollTrigger : {
+            scrub : 2
+        },
+        y : 150,
+        scale : 1.5,
+    }),
+    gsap.to("#bg2", {
+        scrollTrigger : {
+            scrub : 2
+        },
+        y : -150
+    }),
+    gsap.to("#bg3", {
+        scrollTrigger : {
+            scrub : 2
+        },
+        y : 100
+    }),
+    gsap.to("#logo", {
+        scrollTrigger : {
+            scrub : 2
+        },
+        y : 100
+    })
 
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

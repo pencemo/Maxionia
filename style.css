@@ -19,9 +19,9 @@ a{
     --secondary-font: #1E1E1E;
 }
 
-html {
+/* html {
     animation: smoothscroll1 1s;
-  }
+  } */
 
 body{
     box-sizing: border-box;
@@ -33,10 +33,10 @@ body{
 .stop-scr{
     overflow: hidden;
 }
-
+/* 
 body::-webkit-scrollbar {
     display: none;
-  }
+  } */
 .container{
     padding: 0 15px;
 }
@@ -323,6 +323,142 @@ body::-webkit-scrollbar {
 
 }
 
+
+
+/* new landing background */
+
+.bg{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+}
+.bg-vid{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+z-index: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+video{
+position: absolute;
+z-index: 1;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter: saturate(90%);
+}
+.video source{
+width: 100%;
+height: 100%;
+
+}
+.bg-img{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 100px;
+}
+.bg-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: left;
+}
+.bg-img-1 {
+z-index: 4;
+}
+.logo-3{
+position: relative;
+z-index: 3;
+width: 550px;
+bottom: 70px;
+}
+.logo-3 img{
+width: 100%;
+}
+.bg-img-2{
+z-index: 2;
+}
+.bg-pading{
+width: 100%;
+height: 100%;
+background-image:linear-gradient(45deg,rgba(0, 0, 0, 0.418),rgba(0, 0, 0, 0.199));
+position: absolute;
+inset: 0;
+z-index: 5;
+}
+.texts{
+position: relative;
+z-index: 1;
+margin-bottom: 120px;
+display: flex;
+justify-content: space-between;
+align-items: end;
+}
+.texts p{
+margin: 0;
+color: aliceblue;
+opacity: .9;
+font-size: 12px;
+font-weight: 300;
+max-width: 550px;
+line-height: 17px;
+}
+.sroll-down{
+border: solid 1px #fff;
+height: 100px;
+}
+.long-icons{
+position: relative;
+z-index: 4;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+.long-icons a{
+width: 35px;
+height: 35px;
+/* background-color: #fff; */
+border: #fff solid 1px;
+border-radius: 50%;
+display: grid;
+place-content: center;
+color: #ffffff;
+}
+.side{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 100px;
+}
+@media (max-width: 768px){
+.logo-3{
+    width: 350px;
+    bottom: 70px;
+}
+.texts p{
+    max-width: 300px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/* **************************** */
 
 
 /* landing Bg */

@@ -169,3 +169,39 @@ var swiper = new Swiper(".mySwiper", {
   
   
   
+
+
+
+
+
+
+
+  gsap.to("#bg", {
+    scrollTrigger : {
+        scrub : 2
+    },
+    y : 150,
+    scale : 1.5,
+}),
+gsap.to("#bg2", {
+    scrollTrigger : {
+        scrub : 2
+    },
+    y : -150
+}),
+gsap.to("#bg3", {
+    scrollTrigger : {
+        scrub : 2
+    },
+    y : 100
+}),
+gsap.to("#logo", {
+    scrollTrigger : {
+        scrub : 2
+    },
+    y : 100
+})
+
+
+
+
