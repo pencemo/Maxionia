@@ -899,7 +899,7 @@ gap: 100px;
 
 .set-sub{
     width: 100%;
-    padding: 50px;
+    padding: 50px 0;
     background-color:#f5f5f5;
 }
 .sub-hed{
@@ -913,7 +913,7 @@ gap: 100px;
 }
 .sub-raw{
     display: flex;
-    gap: 20px;
+    gap: 20px ;
     flex-wrap: wrap;
 }
 .sub-box{

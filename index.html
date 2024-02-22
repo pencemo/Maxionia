@@ -478,7 +478,24 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 
+    <!-- lenis scroll  -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
 
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+    </script>
 
      <!-- gsap scroll animation  -->
 
@@ -493,26 +510,30 @@
     <script>
            gsap.to("#bg", {
         scrollTrigger : {
-            scrub : 2
+            scrub : 1,
+            
         },
         y : 150,
         scale : 1.5,
     }),
     gsap.to("#bg2", {
         scrollTrigger : {
-            scrub : 2
+            scrub : 1,
+            
         },
         y : -150
     }),
     gsap.to("#bg3", {
         scrollTrigger : {
-            scrub : 2
+            scrub : 1,
+            
         },
         y : 100
     }),
     gsap.to("#logo", {
         scrollTrigger : {
-            scrub : 2
+            scrub : 1,
+            
         },
         y : 100
     })
